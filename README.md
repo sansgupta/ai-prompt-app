@@ -25,16 +25,6 @@ ai-prompt-app-1/
 
 ---
 
-##  Prerequisites
-
-Make sure you have the following installed:
-
-- **Node.js** and **npm**: https://nodejs.org/
-- **MongoDB Atlas** account (or local MongoDB)
-- An **OpenAI API key**: https://platform.openai.com/account/api-keys
-
----
-
 ##  Backend Setup
 
 ### 1. Navigate to the backend folder
