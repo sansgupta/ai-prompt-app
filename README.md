@@ -4,7 +4,7 @@ This is a full-stack AI-powered prompt-response app using **React.js (frontend)*
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 ai-prompt-app-1/
@@ -25,7 +25,7 @@ ai-prompt-app-1/
 
 ---
 
-## 🚀 Prerequisites
+##  Prerequisites
 
 Make sure you have the following installed:
 
@@ -35,7 +35,7 @@ Make sure you have the following installed:
 
 ---
 
-## 🛠️ Backend Setup
+##  Backend Setup
 
 ### 1. Navigate to the backend folder
 ```bash
@@ -69,7 +69,7 @@ Server running on port 5000
 
 ---
 
-## 💻 Frontend Setup
+##  Frontend Setup
 
 ### 1. Navigate to the frontend folder
 ```bash
@@ -95,33 +95,13 @@ http://localhost:5173
 
 ---
 
-## 📮 API Endpoints
+##  API Endpoints
 
 | Method | Endpoint                | Description                     |
 |--------|-------------------------|---------------------------------|
 | POST   | `/api/ask-ai`           | Sends prompt and gets response  |
 | GET    | `/api/history`          | Fetches last 20 prompt-responses |
 | DELETE | `/api/conversations`    | Deletes all stored prompts      |
-
----
-
-## ✅ Example: Using Postman
-
-**POST** `/api/ask-ai`
-
-```json
-{
-  "prompt": "What is the capital of France?"
-}
-```
-
----
-
-## 🧽 Troubleshooting
-
-- **429 Rate Limit**: You're hitting OpenAI's request limit — wait or upgrade your plan.
-- **500 Server Error**: Check if MongoDB is connected, and OpenAI key is valid.
-- **CORS issues**: Make sure both frontend and backend are using the correct ports.
 
 ---
 
