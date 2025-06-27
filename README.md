@@ -105,3 +105,84 @@ http://localhost:5173
 
 ---
 
+##  API Endpoints Documentation
+
+### 1. `POST /api/ask-ai`
+**Description:** Sends a user prompt to OpenAI and stores the AI response in MongoDB.
+
+- **Request Body:**
+```json
+{
+  "prompt": "Explain machine learning in simple terms"
+}
+```
+
+- **Response:**
+```json
+{
+  "response": "Machine learning is a way..."
+}
+```
+
+####  Example (Postman):
+- Method: `POST`
+- URL: `http://localhost:5000/api/ask-ai`
+- Body: `raw` JSON
+```json
+{
+  "prompt": "What is React?"
+}
+```
+
+####  Example (curl):
+```bash
+curl -X POST http://localhost:5000/api/ask-ai \
+     -H "Content-Type: application/json" \
+     -d '{"prompt": "What is React?"}'
+```
+
+---
+
+### 2. `GET /api/history`
+**Description:** Retrieves the last 20 prompt-response entries from the database.
+
+- **Response:**
+```json
+[
+  {
+    "_id": "12345",
+    "prompt": "What is AI?",
+    "response": "AI stands for artificial intelligence...",
+    "createdAt": "2024-06-26T10:00:00Z"
+  }
+]
+```
+
+####  Example (curl):
+```bash
+curl http://localhost:5000/api/history
+```
+
+---
+
+### 3. `DELETE /api/conversations`
+**Description:** Deletes all stored prompts and responses from the database.
+
+- **Response:**
+```json
+{
+  "message": "All conversations deleted"
+}
+```
+
+####  Example (curl):
+```bash
+curl -X DELETE http://localhost:5000/api/conversations
+```
+
+---
+
+## 💡 Author
+Built by Sanskar Gupta
+
+---
