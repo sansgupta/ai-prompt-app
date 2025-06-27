@@ -153,7 +153,7 @@ curl -X POST http://localhost:5000/api/ask-ai \
     "_id": "12345",
     "prompt": "What is AI?",
     "response": "AI stands for artificial intelligence...",
-    "createdAt": "2024-06-26T10:00:00Z"
+    "createdAt": "2025-06-27T10:00:00Z"
   }
 ]
 ```
@@ -182,7 +182,7 @@ curl -X DELETE http://localhost:5000/api/conversations
 
 ---
 
-## 💡 Author
+##  Author
 Built by Sanskar Gupta
 
 ---
