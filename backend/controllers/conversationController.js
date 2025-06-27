@@ -5,7 +5,7 @@ const getConversations = async (req, res) => {
   try {
     const conversations = await Conversation.find()
       .sort({ createdAt: -1 })  // newest first
-      .limit(50);               // limit to last 50 records, adjust as needed
+      .limit(50);               // limit to last 50 records
 
     res.status(200).json(conversations);
   } catch (error) {
